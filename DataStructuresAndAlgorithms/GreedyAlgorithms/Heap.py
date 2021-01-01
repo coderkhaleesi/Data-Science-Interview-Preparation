@@ -27,6 +27,8 @@ class Heap(object):
 			if self.heap_list[i-1] < self.heap_list[index-1]:
 				self.heap_list[i-1], self.heap_list[index-1] = self.heap_list[index-1], self.heap_list[i-1]
 
+			i = index
+
 
 	def get_max_child(self, i):
 		
@@ -38,11 +40,4 @@ class Heap(object):
 			return 2*i
 
 		else:
-			return 2*i + 1
-
-	def 
-
-
-
-
-		
+			return 2*i + 1	
